@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title></title>
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <!-- CSS  -->
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/icon.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+<!-- Menu -->
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img class = "ImgLogo" src="images/cables3.png"></a>
+      <ul id="mru" class="dropdown-content">
+      <li><a  href="ejercicios/mru/calculadorMRU/index.html">Calculador MRU</a></li>
+      <li><a  href="ejercicios/mru/calculadorMRUA/index.html">Calculador MRUA</a></li>
+      <li><a  href="ejercicios/mru/asalto/index.html">El robo del teléfono</a></li>
+      <li><a  href="ejercicios/mru/asalto_banco/index.html">Atraco en banco</a></li>
+    </ul>
+    <ul id="MovimientoParabolico" class="dropdown-content">
+      <li><a  href="ejercicios/movimiento_parabolico/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/bandada_de_pajaros/index.html">Bandada de Palomas</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/balon_desde_edificio/index.html">Pateadas de Balones desde Edificio</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/lanzando_piedra/index.html">Midiendo fuerza de lanzamiento</a></li>
+    </ul>
+    <ul id="CaidaLibre" class="dropdown-content">
+      <li><a  href="ejercicios/caida_libre/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/caida_libre/el_tornillo/index.html">El Tornillo</a></li>
+      <li><a  href="ejercicios/caida_libre/lanzando_piedra/index.html">Lazando Pelota</a></li>
+      <li><a  href="ejercicios/caida_libre/dia_en_la_playa/index.html">Dia en la Playa</a></li>
+    </ul>
+
+     <!--Menu -->
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="MovimientoParabolico">Movimiento Parabólico<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="CaidaLibre">Caída Libre<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="mru">Movimiento Rectilineo Uniforme<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right">
+      <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+    </ul>
+<!--DropDown Movil-->
+    <ul id="mruM" class="dropdown-content">
+      <li><a  href="ejercicios/mru/calculadorMRU/index.html">Calculador MRU</a></li>
+      <li><a  href="ejercicios/mru/calculadorMRUA/index.html">Calculador MRUA</a></li>
+      <li><a  href="ejercicios/mru/asalto/index.html">El robo del teléfono</a></li>
+      <li><a  href="ejercicios/mru/asalto_banco/index.html">Atraco en banco</a></li>
+    </ul>
+    <ul id="MovimientoParabolicoM" class="dropdown-content">
+      <li><a  href="ejercicios/movimiento_parabolico/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/bandada_de_pajaros/index.html">Bandada de Palomas</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/balon_desde_edificio/index.html">Pateadas de Balones desde Edificio</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/lanzando_piedra/index.html">Midiendo fuerza de lanzamiento</a></li>
+    </ul>
+    <ul id="CaidaLibreM" class="dropdown-content">
+      <li><a  href="ejercicios/caida_libre/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/caida_libre/el_tornillo/index.html">El Tornillo</a></li>
+      <li><a  href="ejercicios/caida_libre/lanzando_piedra/index.html">Lazando Pelota</a></li> 
+    </ul>
+    <!--Menu Dispositivo Movil-->
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a class="dropdown-button" href="#!" data-activates="MovimientoParabolicoM">Movimiento Parabólico</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="CaidaLibreM">Caída Libre</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="mruM">M.R.U</a></li>
+      <li><a  href="preguntas.html"> Preguntas frecuentes</a></li>
+    </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+ <div class="col s12 m4">
+  <div class="icon-block">
+    <h4 class="center header center orange-text">Preguntas Frecuentes</h4>      
+    <ul class="collapsible popout" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Cuáles son las fórmulas de Movimiento Rectilíneo Uniforme?</div>
+        <div class="collapsible-body"><p>
+          <b>Estas son las fórmulas de Movimiento Rectilíneo Uniforme</b> 
+          <center> <img class="responsive-img" src="images/formulasmru.png"></center><br>
+          <b>Estas son las fórmulas de Movimiento Rectilíneo Uniformemente Acelerado</b> 
+          <center> <img class="responsive-img" src="images/formulasmrua.png"></center>
+        </p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Cuáles son las fórmulas de Caída Libre?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/formulascl.png"></center>
+      </div>
+      </li>
+       <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Cuáles son las fórmulas de Movimiento Parabólico?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/formulasmp.png"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Como convertir unidades de “km/seg” a “m/seg”?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/convertirkm.png"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Como convertir unidades de “min” a “seg”?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/convertirmin.png"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Para qué sirve la física?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/paraquesirvelafisica.jpg"></center>
+          <center> <img class="responsive-img" src="images/paraquesirvelafisica2.jpg"></center>
+          Referencia: http://paraquesirven.com/para-que-sirve-la-fisica/
+</div>
+
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Que es la física y el simulador?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/fisicaysimulador.jpg"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Que significan las letras en los ejercicios?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/letras.png"></center>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  <!--FOOTER-->
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">PhySim</h5>
+          <p class="grey-text text-lighten-4">Software de Simulación para laboratorio de física para alumnos 
+          de cuarto (4to) año de bachillerato</p>
+        </div> 
+        <div class="col l3 s12" >
+          <h5 class="white-text">Tecnologias Open Source</h5>
+          <img class="imgFooter" src="images/materialize.png" title="Materializecss">
+          <img class="imgFooter" src="images/nw.svg" title="Node Webkit">
+          <img class="imgFooter" src="images/construct2.png" title="Construct2"> 
+          <img class="imgFooter" src="images/highcharts.png" title="Highcharts"> 
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Desarrollado por Oscar Darío Román (2015-2016), Universidad de Oriente Nucleo Nueva Esparta (UDONE).
+      </div>
+    </div>
+  </footer>
+<!-- <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> !-->
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title></title>
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <!-- CSS  -->
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/icon.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+<body>
+<!-- Menu -->
+<script>
+var linksMRU = new Array();
+linksMRU[0]= "ejercicios/mru/calculadorMRU/index.html";
+linksMRU[1]= "ejercicios/mru/calculadorMRUA/index.html";
+linksMRU[2]= "ejercicios/mru/el_telefono/index.html";
+linksMRU[3]= "ejercicios/mru/trayectoria/index.html";
+linksMRU[4]= "ejercicios/mru/viaje_jose/index.html";
+linksMRU[5]= "ejercicios/mru/atrapando_al_ladron/index.html";
+linksMRU[6]= "ejercicios/mru/desacelerando/index.html"
+
+var linksMP = new Array();
+linksMP[0]= "ejercicios/movimiento_parabolico/calculador/index.html";
+linksMP[1]= "ejercicios/movimiento_parabolico/bandada_de_aves/index.html";
+linksMP[2]= "ejercicios/movimiento_parabolico/basquet/index.html";
+linksMP[3]= "ejercicios/movimiento_parabolico/futbol/index.html";
+linksMP[4]= "ejercicios/movimiento_parabolico/lanzamiento_con_altura/index.html";
+linksMP[5]= "ejercicios/movimiento_parabolico/lanzamiento_de_piedra/index.html";
+linksMP[6]= "ejercicios/movimiento_parabolico/canon/index.html";
+
+var linksCL = new Array();
+linksCL[0]= "ejercicios/caida_libre/calculador/index.html";
+linksCL[1]= "ejercicios/caida_libre/el_tornillo/index.html";
+linksCL[2]= "ejercicios/caida_libre/lanzamiento_hacia_arriba/index.html";
+linksCL[3]= "ejercicios/caida_libre/dia_en_la_playa/index.html";
+linksCL[4]= "ejercicios/caida_libre/midiendo_distancia/index.html";
+linksCL[5]= "ejercicios/caida_libre/balon_de_basquet/index.html";
+linksCL[6]= "ejercicios/caida_libre/lanzamiento_hacia_abajo/index.html";
+
+function ramdomMP() {
+    var x = Math.floor((Math.random() * 6) + 0);
+    document.getElementById("MP").href = linksMP[x];
+}
+function ramdomCL() {
+    var x = Math.floor((Math.random() * 6) + 0);
+    document.getElementById("CL").href = linksCL[x];
+}
+function ramdomMRU() {
+    var x = Math.floor((Math.random() * 6) + 0);
+    document.getElementById("MRU").href = linksMRU[x];
+}
+///MOVIL
+function ramdomMP2() {
+    var x = Math.floor((Math.random() * 6) + 0);
+    document.getElementById("MP2").href = linksMP[x];
+}
+function ramdomCL2() {
+    var x = Math.floor((Math.random() * 6) + 0);
+    document.getElementById("CL2").href = linksCL[x];
+}
+function ramdomMRU2() {
+    var x = Math.floor((Math.random() * 6) + 0);
+    document.getElementById("MRU2").href = linksMRU[x];
+}
+</script>
+<!-- Menu -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img class = "ImgLogo" src="images/cables3.png"></a>
+     <!--Menu -->
+    <ul class="right hide-on-med-and-down">
+      <li><a id="MP" href="#!" onclick="ramdomMP()">Movimiento Parabólico</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a id="CL" href="#!" onclick="ramdomCL()">Movimiento de Caída Libre</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a id="MRU" href="#!" onclick="ramdomMRU()">Movimiento Rectilíneo Uniforme</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+    </ul>
+<!--DropDown Movil-->
+    <!--Menu Dispositivo Movil-->
+    <ul id="nav-mobile" class="side-nav">
+      <li><a  href="preguntas.html"> Preguntas frecuentes</a></li>
+      <li><a id="MP2" href="#!" onclick="ramdomMP2()">Movimiento Parabólico</a></li>
+      <li><a id="CL2" href="#!" onclick="ramdomCL2()">Movimiento de Caída Libre</a></li>
+      <li><a id="MRU2" href="#!" onclick="ramdomMRU2()">Movimiento Rectilíneo Uniforme</a></li>
+      
+    </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+ <div class="col s12 m4">
+  <div class="icon-block">
+    <h4 class="center header center orange-text">Preguntas Frecuentes</h4>      
+    <ul class="collapsible popout" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Cuáles son las fórmulas de Movimiento Rectilíneo Uniforme?</div>
+        <div class="collapsible-body"><p>
+          <b>Estas son las fórmulas de Movimiento Rectilíneo Uniforme</b> 
+          <center> <img class="responsive-img" src="images/formulasmru.png"></center><br>
+          <b>Estas son las fórmulas de Movimiento Rectilíneo Uniformemente Acelerado</b> 
+          <center> <img class="responsive-img" src="images/formulasmrua.png"></center>
+        </p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Cuáles son las fórmulas de Caída Libre?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/formulascl.png"></center>
+      </div>
+      </li>
+       <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Cuáles son las fórmulas de Movimiento Parabólico?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/formulasmp.png"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Como convertir unidades de “km/seg” a “m/seg”?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/convertirkm.png"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Como convertir unidades de “min” a “seg”?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/convertirmin.png"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Para qué sirve la física?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/paraquesirvelafisica.jpg"></center>
+          <center> <img class="responsive-img" src="images/paraquesirvelafisica2.jpg"></center>
+          Referencia: http://paraquesirven.com/para-que-sirve-la-fisica/
+</div>
+
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Que es la física y el simulador?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/fisicaysimulador.jpg"></center>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">expand_more</i>¿Que significan las letras en los ejercicios?</div>
+        <div class="collapsible-body">
+          <center> <img class="responsive-img" src="images/letras.png"></center>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  <!--FOOTER-->
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">PhySim</h5>
+          <p class="grey-text text-lighten-4">Software de Simulación para laboratorio de física para alumnos 
+          de cuarto (4to) año de bachillerato</p>
+        </div> 
+        <div class="col l3 s12" >
+          <h5 class="white-text">Tecnologias Open Source</h5>
+          <img class="imgFooter" src="images/materialize.png" title="Materializecss">
+          <img class="imgFooter" src="images/nw.svg" title="Node Webkit">
+          <img class="imgFooter" src="images/construct2.png" title="Construct2"> 
+          <img class="imgFooter" src="images/highcharts.png" title="Highcharts"> 
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Desarrollado por Oscar Darío Román (2015-2016), Universidad de Oriente Nucleo Nueva Esparta (UDONE).
+      </div>
+    </div>
+  </footer>
+<!-- <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> !-->
+  </body>
+</html>

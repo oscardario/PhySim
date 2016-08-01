@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title></title>
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <!-- CSS  -->
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/icon.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<!-- Menu -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img class = "ImgLogo" src="images/cables3.png"></a>
+      <ul id="mru" class="dropdown-content">
+       <li><a  href="ejercicios/mru/calculadorMRU/index.html">Calculador MRU</a></li>
+      <li><a  href="ejercicios/mru/calculadorMRUA/index.html">Calculador MRUA</a></li>
+      <li><a  href="ejercicios/mru/el_telefono/index.html">El teléfono</a></li>
+      <li><a  href="ejercicios/mru/trayectoria/index.html">Trayectoria</a></li>
+      <li><a  href="ejercicios/mru/viaje_jose/index.html">Viaje de José</a></li>
+      <li><a  href="ejercicios/mru/atrapando_al_ladron/index.html">Atrapando al ladron</a></li>
+      <li><a  href="ejercicios/mru/desacelerando/index.html">Desacelerando</a></li>
+    </ul>
+    <ul id="MovimientoParabolico" class="dropdown-content">
+      <li><a  href="ejercicios/movimiento_parabolico/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/bandada_de_aves/index.html">Bandada de aves</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/basquet/index.html">Basquet</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/futbol/index.html">Futbol</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/lanzamiento_con_altura/index.html">Lanzammiento con altura</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/lanzamiento_de_piedra/index.html">Lanzamiento de piedra</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/canon/index.html">Cañon</a></li>
+    </ul>
+    <ul id="CaidaLibre" class="dropdown-content">
+    <li><a  href="ejercicios/caida_libre/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/caida_libre/el_tornillo/index.html">El Tornillo</a></li>
+      <li><a  href="ejercicios/caida_libre/lanzamiento_hacia_arriba/index.html">Lazamiento hacia arriba</a></li>
+      <li><a  href="ejercicios/caida_libre/dia_en_la_playa/index.html">Dia en la Playa</a></li>
+      <li><a  href="ejercicios/caida_libre/midiendo_distancia/index.html">Midiendo Distancia</a></li>
+      <li><a  href="ejercicios/caida_libre/balon_de_basquet/index.html">Balón de basquet</a></li>
+      <li><a  href="ejercicios/caida_libre/lanzamiento_hacia_abajo/index.html">Lanzamiento hacia abajo</a></li>
+    </ul>
+
+     <!--Menu -->
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="MovimientoParabolico">Movimiento Parabólico<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="CaidaLibre">Movimiento de Caída Libre<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="mru">Movimiento Rectilíneo Uniforme<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right">
+      <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+    </ul>
+<!--DropDown Movil-->
+    <ul id="mruM" class="dropdown-content">
+     <li><a  href="ejercicios/mru/calculadorMRU/index.html">Calculador MRU</a></li>
+      <li><a  href="ejercicios/mru/calculadorMRUA/index.html">Calculador MRUA</a></li>
+      <li><a  href="ejercicios/mru/el_telefono/index.html">El teléfono</a></li>
+      <li><a  href="ejercicios/mru/trayectoria/index.html">Trayectoria</a></li>
+      <li><a  href="ejercicios/mru/viaje_jose/index.html">Viaje de José</a></li>
+      <li><a  href="ejercicios/mru/atrapando_al_ladron/index.html">Atrapando al ladron</a></li>
+      <li><a  href="ejercicios/mru/desacelerando/index.html">Desacelerando</a></li>
+    </ul>
+    <ul id="MovimientoParabolicoM" class="dropdown-content">
+      <li><a  href="ejercicios/movimiento_parabolico/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/bandada_de_aves/index.html">Bandada de aves</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/basquet/index.html">Basquet</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/futbol/index.html">Futbol</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/lanzamiento_con_altura/index.html">Lanzammiento con altura</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/lanzamiento_de_piedra/index.html">Lanzamiento de piedra</a></li>
+      <li><a  href="ejercicios/movimiento_parabolico/canon/index.html">Cañon</a></li>
+    </ul>
+    <ul id="CaidaLibreM" class="dropdown-content">
+     <li><a  href="ejercicios/caida_libre/calculador/index.html">Calculador</a></li>
+      <li><a  href="ejercicios/caida_libre/el_tornillo/index.html">El Tornillo</a></li>
+      <li><a  href="ejercicios/caida_libre/lanzamiento_hacia_arriba/index.html">Lazamiento hacia arriba</a></li>
+      <li><a  href="ejercicios/caida_libre/dia_en_la_playa/index.html">Dia en la Playa</a></li>
+      <li><a  href="ejercicios/caida_libre/midiendo_distancia/index.html">Midiendo Distancia</a></li>
+      <li><a  href="ejercicios/caida_libre/balon_de_basquet/index.html">Balón de basquet</a></li>
+      <li><a  href="ejercicios/caida_libre/lanzamiento_hacia_abajo/index.html">Lanzamiento hacia abajo</a></li>
+    </ul>
+    <!--Menu Dispositivo Movil-->
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a class="dropdown-button" href="#!" data-activates="MovimientoParabolicoM">Movimiento Parabólico</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="CaidaLibreM">Caída Libre</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="mruM">M.R.U</a></li>
+      <li><a  href="preguntas.html"> Preguntas frecuentes</a></li>
+    </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <center><img class="materialboxed responsive-img" src="images/fisica.jpg"></center>
+  <div class="icon-block">
+      <h4 class="center header center orange-text">Movimiento de Caída Libre</h4>         
+  </div>   
+  <center>
+<!-- CUERPO DEL COLLAPSAIBLE !-->      
+        El Movimiento de Caída libre de los cuerpos fue estudiado en profundidad durante el siglo XVII por Galileo Galilei. Sus trabajos permitieron entender que tanto los cuerpos pesados como los ligeros caen con el mismo cambio de velocidad, es decir, que todos los cuerpos caen al mismo tiempo, independientemente de su masa.<br>
+        <b>Experiencia de Newton</b>               
+        * Al soltar simultáneamente una pluma y una piedra en el aire, la piedra llega primero que la pluma, puesto que sobre esta ultima el aire ejerce mayor resistencia (mayor superficie) - Figura1. <br>
+        * Al soltar simultáneamente una pluma y una piedra en el vacío ambas llegan al mismo tiempo, puesto que sobre ambas no existe ninguna resistencia, por lo tanto caen con la misma aceleración - Figura 2.
+        <img class="responsive-img" src="images/pluma_piedra.png"><br>
+        <b>ACELERACIÓN DE LA GRAVEDAD</b><br>
+        Es aquella aceleración con la cual caen los cuerpos. Su valor depende íntegramente del lugar en que se tome.<br>
+        En la superficie terrestre esta aceleración no es constante, esto se debe a que la tierra no es perfectamente esférica y además posee superficies accidentadas.
+        <img class="responsive-img" src="images/nivel_del_mar.png"><br>
+        <b>MOVIMIENTO VERTICAL</b><br>
+        Cuando se suelta un cuerpo a una determinada altura, este cae a través de la vertical, para ello ejerce un movimiento que toma el nombre mencionado. Si el cuerpo es lanzado desde la superficie hacia "arriba" también describe una trayectoria vertical.<br>
+        <img class="responsive-img" src="images/trayectoria_vertical.png">  <br>
+        <b>CASOS DE CAIDA LIBRE</b> <br>
+        <img class="responsive-img" src="images/casos_caida_libre.png"><br>
+        <b>FORMULAS</b> <br>
+        <img class="responsive-img" src="images/formulasCL.png">
+         </p>
+        <b>Referencia:</b>https://explorandolafisica.wikispaces.com/file/view/cinematica+caida+libre.pdf
+
+
+<!-- MOVIMIENTO RECTILINEO UNIFORME-->
+<div class="icon-block">
+      <h4 class="center header center orange-text">Movimiento Rectilíneo Uniforme (M.R.U)</h4>         
+  </div>   
+  
+<!-- CUERPO DEL COLLAPSAIBLE !-->      
+      Cuando un físico se refiere a la prisa con la que se mueve un cuerpo, además de conocer
+      su rapidez, necesita conocer también su dirección. Velocidad y rapidez comúnmente se
+      utilizan como sinónimos.<br>
+      <b>Rapidez:</b> Expresa la distancia recorrida por un cuerpo en el tiempo transcurrido. Es una
+      magnitud escalar.<br>
+      <b>Velocidad:</b> Expresa el desplazamiento de un cuerpo en el tiempo transcurrido. Es una
+      magnitud vectorial.<br>
+      Si el movimiento es rectilíneo, sin que cambie la dirección, los términos velocidad y
+      rapidez se pueden usar indistintamente.<br>
+      <b>Distancia:</b> Es el espacio recorrido por un cuerpo sin importar la dirección. Es una
+      magnitud escalar.<br>
+      <b>Desplazamiento:</b> Es el espacio recorrido por un cuerpo en determinada dirección. Es
+una magnitud vectorial. <br>
+<img class="responsive-img" src="images/mru.png"> <br>
+<img class="responsive-img" src="images/mru2.png"> <br>
+<img class="responsive-img" src="images/mru3.png"> <br>
+<img class="responsive-img" src="images/mru4.png"> <br>
+         </p>
+        <b>Referencia: https://conociendolafisica.files.wordpress.com/2010/04/6mru.pdf</b>
+      
+<!-- MOVIMIENTO PARABOLICO-->
+<div class="icon-block">
+      <h4 class="center header center orange-text">Movimiento Parabólico</h4>         
+  </div>   
+  
+<!-- CUERPO DEL COLLAPSAIBLE !-->      
+       <img class="responsive-img" src="images/mp.png"> <br>
+       <img class="responsive-img" src="images/mp2.png"> <br>
+         </p>
+        <b>Referencia: https://feffio.wikispaces.com/file/view/Movimiento+Parab%C3%B3lico.pdf</b> 
+</center>
+  <!--FOOTER-->
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">PhySim</h5>
+          <p class="grey-text text-lighten-4">Software de Simulación para laboratorio de física para alumnos 
+          de cuarto (4to) año de bachillerato</p>
+        </div> 
+        <div class="col l3 s12" >
+          <h5 class="white-text">Tecnologias Open Source</h5>
+          <img class="imgFooter" src="images/materialize.png" title="Materializecss">
+          <img class="imgFooter" src="images/nw.svg" title="Node Webkit">
+          <img class="imgFooter" src="images/construct2.png" title="Construct2"> 
+          <img class="imgFooter" src="images/highcharts.png" title="Highcharts"> 
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Desarrollado por Oscar Darío Román (2015-2016), Universidad de Oriente Nucleo Nueva Esparta (UDONE).
+      </div>
+    </div>
+  </footer>
+<!-- <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> !-->
+  </body>
+</html>

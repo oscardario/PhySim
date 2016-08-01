@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title></title>
+  <!-- CSS  -->
+  <link href="../../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../../css/icon.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+</head> 
+<body>
+<!-- Menu -->
+    <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="../../../index.html" class="brand-logo"><img class = "ImgLogo" src="../../../images/cables3.png"></a>
+      <ul id="mru" class="dropdown-content">
+      <li><a  href="../../mru/calculadorMRU/index.html">Calculador MRU</a></li>
+      <li><a  href="../../mru/calculadorMRUA/index.html">Calculador MRUA</a></li>
+      <li><a  href="../../mru/asalto/index.html">El robo del teléfono</a></li>
+      <li><a  href="../../mru/asalto_banco/index.html">Atraco en banco</a></li>
+    </ul>
+    <ul id="MovimientoParabolico" class="dropdown-content">
+      <li><a  href="../movimiento_parabolico/calculador/index.html">Calculador</a></li>
+      <li><a  href="../movimiento_parabolico/bandada_de_palomas/index.html">Bandada de Palomas</a></li>
+      <li><a  href="../movimiento_parabolico/balon_desde_edificio/index.html">Pateadas de Balones desde Edificio</a></li>
+      <li><a  href="../movimiento_parabolico/lanzando_piedraindex.html">Midiendo fuerza de lanzamiento</a></li>
+    </ul>
+    <ul id="CaidaLibre" class="dropdown-content">
+      <li><a  href="../../caida_libre/calculador/index.html">Calculador</a></li>
+      <li><a  href="../../caida_libre/el_tornillo/index.html">El Tornillo</a></li>
+      <li><a  href="../../caida_libre/lanzando_piedra/index.html">Lazando Pelota</a></li>
+     
+    </ul>
+
+     <!--Menu -->
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="MovimientoParabolico">Movimiento Parabólico<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="CaidaLibre">Caída Libre<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="mru">Movimiento Rectilineo Uniforme<i class="icon-arrow_drop_down right" id="iconos"></i></a></li>
+    </ul>
+<!--DropDown Movil-->
+    <ul id="mruM" class="dropdown-content">
+      <li><a  href="../../mru/calculadorMRU/index.html">Calculador MRU</a></li>
+      <li><a  href="../../mru/calculadorMRUA/index.html">Calculador MRUA</a></li>
+      <li><a  href="../../mru/asalto/index.html">El robo del teléfono</a></li>
+      <li><a  href="../../mru/asalto_banco/index.html">Atraco en banco</a></li>
+    </ul>
+    <ul id="MovimientoParabolicoM" class="dropdown-content">
+      <li><a  href="../movimiento_parabolico/calculador/index.html">Calculador</a></li>
+      <li><a  href="../movimiento_parabolico/bandada_de_palomas/index.html">Bandada de Palomas</a></li>
+      <li><a  href="../movimiento_parabolico/balon_desde_edificio/index.html">Pateadas de Balones desde Edificio</a></li>
+      <li><a  href="../movimiento_parabolico/lanzando_piedraindex.html">Midiendo fuerza de lanzamiento</a></li>
+    </ul>
+    <ul id="CaidaLibreM" class="dropdown-content">
+      <li><a  href="../../caida_libre/calculador/index.html">Calculador</a></li>
+      <li><a  href="../../caida_libre/el_tornillo/index.html">El Tornillo</a></li>
+      <li><a  href="../../caida_libre/lanzando_piedra/index.html">Lazando Pelota</a></li>
+    </ul>
+    <!--Menu Dispositivo Movil-->
+    <ul id="nav-mobile" class="side-nav">
+      <li><a class="dropdown-button" href="#!" data-activates="MovimientoParabolicoM">Movimiento Parabólico</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="CaidaLibreM">Caída Libre</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="mruM">Movimiento Rectilineo Uniforme</a></li>
+    </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+	<!-- SIMULADOR -->
+  <div class="section no-pad-bot" id="index-banner">
+      <div id="c2canvasdiv">
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="854" height="480">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+			<a href="http://www.apple.com/safari/download/">Apple Safari</a><br/>
+			<a href="http://www.google.com/chromeframe">Google Chrome Frame for Internet Explorer</a><br/></h1>
+		</canvas>
+    </div>
+  </div>
+<!-- EXPLICACION -->
+<div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center light-blue-text"><i class="material-icons">bubble_chart</i></h2>
+          <h5 class="center">Como Resolver</h5>      
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">expand_more</i>Formulas</div>
+            <div class="collapsible-body"><p>
+              Para resolver este ejercicio solo basta con tener las siguientes formulas y sustituir los valores que tenemos que en este caso son velocidad inicial (Vo) la cual es 27, el ángulo (θ) que es de 50º y la altura inicial donde se patean los balones: <br>
+              <!--FORMULAS -->
+              <center> <img class="responsive-img"  src="images/formulas.png"></center>
+              <b>Conocinedo ya las formulas, realiza tu los calculas y desbloquea la animación, Suerte!</b>
+            </p></div>
+          </li>
+        </ul>
+        </div>
+      </div>
+<div id="container"></div>
+	
+	<!--  Scripts-->
+  <script src="../../../js/jquery.min.js"></script>
+  <script src="../../../js/materialize.js"></script>
+  <script src="../../../js/init.js"></script>
+  <script src="c2runtime.js"></script>
+  <script src="js/highcharts.js"></script>
+  <script src="js/highcharts-more.js"></script>
+  <script src="js/graficas.js"></script>
+
+    <script>
+		// Size the canvas to fill the browser viewport.
+		jQuery(window).resize(function() {
+			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+		});
+		
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{			
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		if (navigator.serviceWorker && navigator.serviceWorker.register)
+		{
+			// Register an empty service worker to trigger web app install banners.
+			navigator.serviceWorker.register("sw.js", { scope: "./" });
+		}
+    </script>
+</body> 
+</html> 
